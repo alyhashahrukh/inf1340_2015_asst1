@@ -21,6 +21,38 @@ __license__ = "MIT License"
 # She sold the stock for $942.75 per share.
 # She paid his stockbroker another commission that amounted to 3 percent of the amount she received for the stock.
 
+# Set original problem variables
+purchased_shares = 2000
+share_purchase_price = 900.00
+commission_percentage = 0.03
+sold_shares = 2000
+share_selling_price = 942.75
 
-money = 1000.00
-print(money)
+#Calculate the amount paid for initial purchase of 2000 shares
+cost_of_shares = (purchased_shares * share_purchase_price)
+purchase_commission_cost = (cost_of_shares * commission_percentage)
+total_purchase_cost = (cost_of_shares + purchase_commission_cost)
+print "The total cost of Lakshmi's purchase of stock (including commision) is $", total_purchase_cost
+
+#Calculate the amount made for the sale of her 2000 shares
+share_sale_profit = (sold_shares * share_selling_price)
+sale_commission_cost = (share_sale_profit * commission_percentage)
+total_sale_profit = (share_sale_profit - sale_commission_cost)
+print (total_sale_profit)
+
+#Calculate the amount of money remaining after stock transactions
+transaction_money_difference = (total_sale_profit - total_purchase_cost)
+print (transaction_money_difference)
+
+#Translate numerical calculations to a profit or loss position
+if transaction_money_difference < 0:
+    print("Lakshmi recorded a loss on the transaction of $"),abs(transaction_money_difference)
+else:
+    print ("Lakshmi recorded a profit on the transaction of $"),(transaction_money_difference)
+
+
+
+
+
+
+
