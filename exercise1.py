@@ -13,7 +13,7 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-# Assignment 1
+# Assignment Outline
 # Lakshmi bought 2000 shares.
 # When Lakshmi purchased the stock, she paid $900.00 per share.
 # Lakshmi paid her stockbroker a commission that amounted to 3 percent of the amount she paid for the stock
