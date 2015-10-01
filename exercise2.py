@@ -34,8 +34,37 @@ def name_that_shape():
     Errors:
 
     """
+# Find shape name by number of sides input by user.
 
-    print("Error")
+    side = int(input("Please enter the number of sides:"))
 
+    if side == 3:
+        print("This is a triangle.")
+    elif side == 4:
+        print("This is a square.")
+    elif side == 5:
+        print("This is a pentagon.")
+    elif side == 6:
+        print("This is a hexagon.")
+    elif side == 7:
+        print("This is a heptagon.")
+    elif side == 8:
+        print("This is an octagon.")
+    elif side == 9:
+        print("This is a nonagon.")
+    elif side == 10:
+        print("This is a decagon.")
+
+# If sides is 0 or greater than 10 there in no name, therefore "Error" issued.
+    if side == 0:
+        print ("Error!")
+    elif side > 10:
+        print ("Error!")
 
 name_that_shape()
+
+
+# QUESTIONS
+# Meaning full message means a proper sentence?
+# Does the error statement need to be in a s sentence?
+# Comment above need to be filled out or not?
