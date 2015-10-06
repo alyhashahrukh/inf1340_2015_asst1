@@ -21,7 +21,8 @@ def diagnose_car(answer):
     Expected Outputs:
     Errors:
     """
-
+    #Program asks user first question and then determines
+    # what question to ask next depending on the answer
     if answer == 'y':
         question1 = "Are the battery terminals corroded?"
         question2 = raw_input(question1)
@@ -33,16 +34,20 @@ def diagnose_car(answer):
             print(question3)
         else:
             print("Incorrect entry, start over")
+
+    #Program asks user second question depending on answer to first question
     elif answer == 'n':
         question1 = "Does the car make a clicking noise?"
         question2 = raw_input(question1)
         if question2 == 'y':
             print("Replace battery")
+        #Program asks user third question depending on answer to first question
         elif question2 == 'n':
             question3 = "Does the car crank up but fail to start?"
             question4 = raw_input(question3)
             if question4 == 'y':
                 print("Check spark plug connections")
+           #Program asks user fourth question depending on answer to first question
             elif question4 == 'n':
                 question5 = "Does the engine start and then die?"
                 question6 = raw_input(question5)
@@ -51,6 +56,7 @@ def diagnose_car(answer):
                     question8 = raw_input(question7)
                     if question8 == 'y':
                         print("Get it in for service!")
+                    #Program asks user fourth question depending on answer to first question
                     elif question8 == 'n':
                         print("Check to ensure the choke is opening and closing")
                     else:
@@ -63,6 +69,8 @@ def diagnose_car(answer):
                 print("Incorrect entry, start over")
         else:
             print("Incorrect entry, start over")
+    #If user enters anything other than "y" or "n" it will recognize the error
+    #And ask the user to start the program over
     else:
         print("Incorrect entry, start over")
 
