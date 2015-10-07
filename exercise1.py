@@ -47,6 +47,11 @@ if transaction_money_difference < 0:
 else:
     print ("Lakshmi recorded a profit on the transaction of $"),(transaction_money_difference)
 
+# Test case: To test this code to see if it runs properly, we checked the answer the program
+# generates with the correct answer we calculated on our own. We preformed this same test
+# again with another different variables. When both tests matched the same answers the
+# program came up with we knew the program was functioning correctly
+
 
 
 #Questions to ask professor/TA
