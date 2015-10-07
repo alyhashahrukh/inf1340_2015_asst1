@@ -24,8 +24,9 @@ def name_that_shape():
 
     Errors: 0 and >10
 
-    To test the code we input numbers between 3 and 10 to see if s given shape name would be the output;
-    we further entered numbers 0 and 13 to see if error message showed.
+    Test Case: To test this code we input numbers between 3 and 10 to see if the number
+    of sides would result in the accurate shape name as an output; we further entered
+    numbers <3 and >10 to see if the error message showed.
 
     """
 # Find shape name by number of sides input by user.
@@ -51,7 +52,7 @@ def name_that_shape():
 
 # If sides are 0 or greater than 10 there is no shape, therefore "Error" issued.
 
-    if side == 0:
+    if side < 3:
         print ("Error!")
     elif side > 10:
         print ("Error!")

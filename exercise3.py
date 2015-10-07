@@ -22,7 +22,7 @@ def diagnose_car(answer):
     Expected Outputs: Another question or solution to question
     Errors: If unexpected input, ask user to start over
 
-    To test this exercise we tested all tree branches within the decision tree.
+    Test Case: To test this code we went through all the tree branches within the decision tree.
 
     """
 
