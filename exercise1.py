@@ -12,14 +12,10 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
-
-# Assignment Outline
-# Lakshmi bought 2000 shares.
-# When Lakshmi purchased the stock, she paid $900.00 per share.
-# Lakshmi paid her stockbroker a commission that amounted to 3 percent of the amount she paid for the stock
-# Lakshmi sold 2000 shares.
-# She sold the stock for $942.75 per share.
-# She paid his stockbroker another commission that amounted to 3 percent of the amount she received for the stock.
+# Test case: To test this code to see if it runs properly, we checked the answer the program
+# generates with the correct answer we calculated on our own. We preformed this same test
+# again with another different variables. When both tests matched the same answers the
+# program came up with we knew the program was functioning correctly
 
 # Set original problem variables
 purchased_shares = 2000
@@ -46,11 +42,6 @@ if transaction_money_difference < 0:
     print("Lakshmi recorded a loss on the transaction of $"),abs(transaction_money_difference)
 else:
     print ("Lakshmi recorded a profit on the transaction of $"),(transaction_money_difference)
-
-# Test case: To test this code to see if it runs properly, we checked the answer the program
-# generates with the correct answer we calculated on our own. We preformed this same test
-# again with another different variables. When both tests matched the same answers the
-# program came up with we knew the program was functioning correctly
 
 
 
