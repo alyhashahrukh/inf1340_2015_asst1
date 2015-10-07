@@ -13,25 +13,19 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-# Assignment Outline
-# Write a program that determines the name of a shape from its number of sides. Read the number of
-# sides from the user and then report the appropriate name as part of a meaningful message. Your program
-# should support shapes with anywhere from 3 up to (and including) 10 sides. If the input something other
-# than the numbers 3 to 10 then your program should display 'Error'. Your code should be easily readable.
-# The function should include comments, proper variable naming and produce messages in case of errors.
-# Add your code and test cases to the starter file, exercise2.py, that has been provided. Do not
-# change the names of the functions in the file.
-
 
 def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
 
-    Inputs:
+    Inputs: 3 to 10
 
-    Expected Outputs:
+    Expected Outputs: triangle, square, pentagon, hexagon, heptagon, octagon, nonagon, decagon
 
-    Errors:
+    Errors: 0 and >10
+
+    To test the code we input numbers between 3 and 10 to see if s given shape name would be the output;
+    we further entered numbers 0 and 13 to see if error message showed.
 
     """
 # Find shape name by number of sides input by user.
@@ -55,7 +49,8 @@ def name_that_shape():
     elif side == 10:
         print("This is a decagon.")
 
-# If sides is 0 or greater than 10 there in no name, therefore "Error" issued.
+# If sides are 0 or greater than 10 there is no shape, therefore "Error" issued.
+
     if side == 0:
         print ("Error!")
     elif side > 10:
@@ -68,3 +63,4 @@ name_that_shape()
 # Meaning full message means a proper sentence?
 # Does the error statement need to be in a s sentence?
 # Comment above need to be filled out or not?
+# Why do we use int(input) instead of raw_input
