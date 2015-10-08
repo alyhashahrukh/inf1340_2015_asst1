@@ -50,10 +50,5 @@ else:
 
 
 
-#Questions to ask professor/TA
-# 1) Should there be anymore displayed print or just the answer statement?
-# 2) Is the if statement ok or should it actually display a negative number?
-# 3) Are the comments descriptive enough?
-
 
 

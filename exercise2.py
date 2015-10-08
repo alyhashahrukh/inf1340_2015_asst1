@@ -26,7 +26,8 @@ def name_that_shape():
 
     Test Case: To test this code we input numbers between 3 and 10 to see if the number
     of sides would result in the accurate shape name as an output; we further entered
-    numbers <3 and >10 to see if the error message showed.
+    numbers < 3 and > 10 to see if an error message showed. Through this testing we are
+    certain that the number of sides correlate with the correct shape name statement.
 
     """
 # Find shape name by number of sides input by user.
@@ -60,8 +61,3 @@ def name_that_shape():
 name_that_shape()
 
 
-# QUESTIONS
-# Meaning full message means a proper sentence?
-# Does the error statement need to be in a s sentence?
-# Comment above need to be filled out or not?
-# Why do we use int(input) instead of raw_input
