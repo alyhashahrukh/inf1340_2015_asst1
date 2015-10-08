@@ -53,59 +53,57 @@ def diagnose_car(answer):
       output "Check to ensure choke is opening and closing."
     7)raw input "N", raw input "N", raw input "N", raw input "Y", raw input "Y"
       output "Get it in for service."
-
-
     """
 
     #Program asks user first question and then determines
     #what question to ask next depending on the answer
 
-    if answer == 'Y':
+    if answer == 'y':
         question1 = "Are the battery terminals corroded?"
         question2 = raw_input(question1)
-        if question2 == 'Y':
-            question3 = "Clean terminals and try starting again."
+        if question2 == 'y':
+            question3 = "Clean terminals and try starting again"
             print (question3)
-        elif question2 == 'Y':
-            question3 = "Replace cables and try again."
+        elif question2 == 'n':
+            question3 = "Replace cables and try again"
             print(question3)
         else:
             print("Incorrect entry, start over")
 
     #Program asks user second question depending on answer to first question
 
-    elif answer == 'N':
+    elif answer == 'n':
         question1 = "Does the car make a clicking noise?"
         question2 = raw_input(question1)
-        if question2 == 'N':
+        if question2 == 'y':
             print("Replace battery")
 
         #Program asks user third question depending on answer to first question
 
-        elif question2 == 'N':
+        elif question2 == 'n':
             question3 = "Does the car crank up but fail to start?"
             question4 = raw_input(question3)
-            if question4 == 'Y':
-                print("Check spark plug connections.")
+            if question4 == 'y':
+                print("Check spark plug connections")
 
            #Program asks user fourth question depending on answer to first question
 
-            elif question4 == 'N':
+            elif question4 == 'n':
                 question5 = "Does the engine start and then die?"
                 question6 = raw_input(question5)
-                if question6 == 'Y':
+                if question6 == 'y':
                     question7 = "Does your car have fuel injection?"
                     question8 = raw_input(question7)
-                    if question8 == 'Y':
-                        print("Get it in for service.")
+                    if question8 == 'y':
+                        print("Get it in for service!")
 
                     #Program asks user fourth question depending on answer to first question
 
-                    elif question8 == 'N':
+                    elif question8 == 'n':
                         print("Check to ensure the choke is opening and closing")
                     else:
                         print("Incorrect entry, start over")
-                elif question6 == 'N':
+                elif question6 == 'n':
                     print("Engine is not getting enough fuel. Clean fuel pump.")
                 else:
                     print("Incorrect entry, start over")
