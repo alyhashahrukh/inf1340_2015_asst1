@@ -18,19 +18,41 @@ def diagnose_car(answer):
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs: "y" or "n"
+    Inputs: "Y" or "N"
 
-    Expected Outputs: Another question or solution to question
+    Expected Outputs:
+    Clean terminals and try starting again.
+    Replace cables and try again.
+    Replace the battery.
+    Check spark plug connections.
+    Engine is not getting enough fuel. Clean fuel pump.
+    Check to ensure choke is opening and closing.
+    Get it in for service.
+
 
     Actual Outputs:
+    Clean terminals and try starting again.
+    Replace cables and try again.
+    Replace the battery.
+    Check spark plug connections.
+    Engine is not getting enough fuel. Clean fuel pump.
+    Check to ensure choke is opening and closing.
+    Get it in for service.
+
 
     Errors: If unexpected input, ask user to start over
 
-    Test Case: To test this code we went through and tested each branch in the decision tree to check
-    that all possible scenarios provided a correct answer. We also tested that if an input not in
-    the form of 'y' or 'n' was entered that the program would recognize the error and address the
-    user to fix the mistake. Through this testing we are confident that the program can troubleshoot
-    car issues.
+    Test Case:
+    1)raw input "Y", raw input "Y", output "Clean terminals and try starting again."
+    2)raw input "Y", raw input "N", output "Replace cables and try again."
+    3)raw input "N", raw input "Y", output "Replace the battery."
+    4)raw input "N", raw input "N", raw input "Y", output "Check spark plug connections."
+    5)raw input "N", raw input "N", raw input "N", raw input "N",
+      output "Engine is not getting enough fuel. Clean fuel pump."
+    6)raw input "N", raw input "N", raw input "N", raw input "Y", raw input "N"
+      output "Check to ensure choke is opening and closing."
+    7)raw input "N", raw input "N", raw input "N", raw input "Y", raw input "Y"
+      output "Get it in for service."
     """
 
     #Program asks user first question and then determines
