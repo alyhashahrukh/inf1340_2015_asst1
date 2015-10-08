@@ -27,7 +27,7 @@ def diagnose_car(answer):
     """
 
     #Program asks user first question and then determines
-    # what question to ask next depending on the answer
+    #what question to ask next depending on the answer
 
     if answer == 'y':
         question1 = "Are the battery terminals corroded?"
@@ -75,7 +75,7 @@ def diagnose_car(answer):
                     else:
                         print("Incorrect entry, start over")
                 elif question6 == 'n':
-                    print("No answer can be provided")   #No section to diagram, check with Prof/TA
+                    print("Engine is not getting enough fuel. Clean fuel pump.")
                 else:
                     print("Incorrect entry, start over")
             else:
