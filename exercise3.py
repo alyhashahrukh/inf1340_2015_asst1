@@ -22,8 +22,11 @@ def diagnose_car(answer):
     Expected Outputs: Another question or solution to question
     Errors: If unexpected input, ask user to start over
 
-    Test Case: To test this code we went through all the tree branches within the decision tree.
-
+    Test Case: To test this code we went through and tested each branch in the decision tree to check
+    that all possible scenarios provided a correct answer. We also tested that if an input not in
+    the form of 'y' or 'n' was entered that the program would recognize the error and address the
+    user to fix the mistake. Through this testing we are confident that the program can troubleshoot
+    car issues.
     """
 
     #Program asks user first question and then determines
