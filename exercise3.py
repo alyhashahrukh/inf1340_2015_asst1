@@ -19,7 +19,11 @@ def diagnose_car(answer):
     possible issue with a car.
 
     Inputs: "y" or "n"
+
     Expected Outputs: Another question or solution to question
+
+    Actual Outputs:
+
     Errors: If unexpected input, ask user to start over
 
     Test Case: To test this code we went through and tested each branch in the decision tree to check
