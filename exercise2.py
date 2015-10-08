@@ -20,53 +20,54 @@ def name_that_shape():
 
     Inputs: 3 to 10
 
-    Expected Outputs: triangle, square, pentagon, hexagon, heptagon, octagon, nonagon, decagon
+    Expected Outputs: triangle, quadrilateral, pentagon, hexagon, heptagon, octagon, nonagon, decagon
 
-    Actual Outputs: triangle, square, pentagon, hexagon, heptagon, octagon, nonagon, decagon
+    Actual Outputs: triangle, quadrilateral, pentagon, hexagon, heptagon, octagon, nonagon, decagon
 
-    Errors: 0 and >10
+    Errors: < 3 and > 10
 
     Test Case:
     Raw input "1", name output "Error"
     Raw input "2", name output "Error"
-    Raw input "3", name output "Triangle"
-    Raw input "4", name output "Square"
-    Raw input "5", name output "Pentagon"
-    Raw input "6", name output "Hexagon"
-    Raw input "7", name output "Heptagon"
-    Raw input "8", name output "Octagon"
-    Raw input "9", name output "Nonagon"
-    Raw input "10", name output "Decagon"
+    Raw input "3", name output "triangle"
+    Raw input "4", name output "quadrilateral"
+    Raw input "5", name output "pentagon"
+    Raw input "6", name output "hexagon"
+    Raw input "7", name output "heptagon"
+    Raw input "8", name output "octagon"
+    Raw input "9", name output "nonagon"
+    Raw input "10", name output "decagon"
     Raw input "11", name output "Error"
 
     """
-    side = int(input("Please enter the number of sides:"))
-    
+# Create string that finds shape name by number of sides input by user.
 
-    if side == 3:
-        print("Triangle")
-    elif side == 4:
-        print("Square")
-    elif side == 5:
-        print("Pentagon")
-    elif side == 6:
-        print("Hexagon")
-    elif side == 7:
-        print("Heptagon")
-    elif side == 8:
-        print("Octagon")
-    elif side == 9:
-        print("Nonagon")
-    elif side == 10:
-        print("Decagon")
+    side = raw_input("Please enter the number of sides:")
 
-# If sides are 0 or greater than 10 there is no shape, therefore "Error" issued.
+    if side == "3":
+        print("triangle")
+    elif side == "4":
+        print("quadrilateral")
+    elif side == "5":
+        print("pentagon")
+    elif side == "6":
+        print("hexagon")
+    elif side == "7":
+        print("heptagon")
+    elif side == "8":
+        print("octagon")
+    elif side == "9":
+        print("nonagon")
+    elif side == "10":
+        print("decagon")
 
-    if side < 3:
-        print ("Error")
-    elif side > 10:
-        print ("Error")
 
-name_that_shape(side)
+# If sides are less than 3 or greater than 10 there is no shape, therefore "Error" issued.
+    else:
+        print("Error")
+
+
+
+#name_that_shape()
 
 
