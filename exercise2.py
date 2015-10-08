@@ -22,12 +22,22 @@ def name_that_shape():
 
     Expected Outputs: triangle, square, pentagon, hexagon, heptagon, octagon, nonagon, decagon
 
+    Actual Outputs: triangle, square, pentagon, hexagon, heptagon, octagon, nonagon, decagon
+
     Errors: 0 and >10
 
-    Test Case: To test this code we input numbers between 3 and 10 to see if the number
-    of sides would result in the accurate shape name as an output; we further entered
-    numbers < 3 and > 10 to see if an error message showed. Through this testing we are
-    certain that the number of sides correlate with the correct shape name statement.
+    Test Case:
+    Raw input "1", name output "Error"
+    Raw input "2", name output "Error"
+    Raw input "3", name output "Triangle"
+    Raw input "4", name output "Square"
+    Raw input "5", name output "Pentagon"
+    Raw input "6", name output "Hexagon"
+    Raw input "7", name output "Heptagon"
+    Raw input "8", name output "Octagon"
+    Raw input "9", name output "Nonagon"
+    Raw input "10", name output "Decagon"
+    Raw input "11", name output "Error"
 
     """
 # Find shape name by number of sides input by user.
@@ -35,28 +45,28 @@ def name_that_shape():
     side = int(input("Please enter the number of sides:"))
 
     if side == 3:
-        print("This is a triangle.")
+        print("Triangle")
     elif side == 4:
-        print("This is a square.")
+        print("Square")
     elif side == 5:
-        print("This is a pentagon.")
+        print("Pentagon")
     elif side == 6:
-        print("This is a hexagon.")
+        print("Hexagon")
     elif side == 7:
-        print("This is a heptagon.")
+        print("Heptagon")
     elif side == 8:
-        print("This is an octagon.")
+        print("Octagon")
     elif side == 9:
-        print("This is a nonagon.")
+        print("Nonagon")
     elif side == 10:
-        print("This is a decagon.")
+        print("Decagon")
 
 # If sides are 0 or greater than 10 there is no shape, therefore "Error" issued.
 
     if side < 3:
-        print ("Error!")
+        print ("Error")
     elif side > 10:
-        print ("Error!")
+        print ("Error")
 
 name_that_shape()
 
