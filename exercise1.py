@@ -12,10 +12,11 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
-# Test case: To test this code to see if it runs properly, we checked the answer the program
-# generates with the correct answer we calculated on our own. We preformed this same test
-# again with another different variables. When both tests matched the same answers the
-# program came up with we knew the program was functioning correctly
+# Test case:
+# If transaction_money_difference = -$25065 then code is functioning correctly
+# No user input = no errors
+
+
 
 # Set original problem variables
 
