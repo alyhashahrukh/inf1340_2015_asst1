@@ -30,9 +30,8 @@ def name_that_shape():
     certain that the number of sides correlate with the correct shape name statement.
 
     """
-# Find shape name by number of sides input by user.
-
     side = int(input("Please enter the number of sides:"))
+    
 
     if side == 3:
         print("This is a triangle.")
@@ -58,6 +57,6 @@ def name_that_shape():
     elif side > 10:
         print ("Error!")
 
-name_that_shape()
+name_that_shape(side)
 
 
