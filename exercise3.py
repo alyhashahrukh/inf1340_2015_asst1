@@ -13,13 +13,12 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-def diagnose_car(answer):
+def diagnose_car():
     """
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
     Inputs: "Y" or "N"
-
     Expected Outputs:
     Clean terminals and try starting again.
     Replace cables and try again.
@@ -29,7 +28,6 @@ def diagnose_car(answer):
     Check to ensure choke is opening and closing.
     Get it in for service.
 
-
     Actual Outputs:
     Clean terminals and try starting again.
     Replace cables and try again.
@@ -38,7 +36,6 @@ def diagnose_car(answer):
     Engine is not getting enough fuel. Clean fuel pump.
     Check to ensure choke is opening and closing.
     Get it in for service.
-
 
     Errors: If unexpected input, ask user to start over
 
@@ -58,52 +55,54 @@ def diagnose_car(answer):
     #Program asks user first question and then determines
     #what question to ask next depending on the answer
 
-    if answer == 'y':
+    initial_question = raw_input("Is the car silent when you turn it on?")
+
+    if initial_question == 'Y':
         question1 = "Are the battery terminals corroded?"
         question2 = raw_input(question1)
-        if question2 == 'y':
-            question3 = "Clean terminals and try starting again"
-            print (question3)
-        elif question2 == 'n':
-            question3 = "Replace cables and try again"
-            print(question3)
+        if question2 == 'Y':
+            solution = "Clean terminals and try starting again."
+            print (solution)
+        elif question2 == 'N':
+            solution = "Replace cables and try again."
+            print(solution)
         else:
             print("Incorrect entry, start over")
 
     #Program asks user second question depending on answer to first question
 
-    elif answer == 'n':
+    elif initial_question == 'N':
         question1 = "Does the car make a clicking noise?"
         question2 = raw_input(question1)
-        if question2 == 'y':
-            print("Replace battery")
+        if question2 == 'Y':
+            print("Replace the battery.")
 
         #Program asks user third question depending on answer to first question
 
-        elif question2 == 'n':
+        elif question2 == 'N':
             question3 = "Does the car crank up but fail to start?"
             question4 = raw_input(question3)
-            if question4 == 'y':
-                print("Check spark plug connections")
+            if question4 == 'Y':
+                print("Check spark plug connections.")
 
            #Program asks user fourth question depending on answer to first question
 
-            elif question4 == 'n':
+            elif question4 == 'N':
                 question5 = "Does the engine start and then die?"
                 question6 = raw_input(question5)
-                if question6 == 'y':
+                if question6 == 'Y':
                     question7 = "Does your car have fuel injection?"
                     question8 = raw_input(question7)
-                    if question8 == 'y':
-                        print("Get it in for service!")
+                    if question8 == 'Y':
+                        print("Get it in for service.")
 
                     #Program asks user fourth question depending on answer to first question
 
-                    elif question8 == 'n':
-                        print("Check to ensure the choke is opening and closing")
+                    elif question8 == 'N':
+                        print("Check to ensure the choke is opening and closing.")
                     else:
                         print("Incorrect entry, start over")
-                elif question6 == 'n':
+                elif question6 == 'N':
                     print("Engine is not getting enough fuel. Clean fuel pump.")
                 else:
                     print("Incorrect entry, start over")
@@ -119,8 +118,7 @@ def diagnose_car(answer):
         print("Incorrect entry, start over")
 
 
-diagnose_car(raw_input("Is the car silent when you turn it on?"))
-
+#diagnose_car()
 
 
 
